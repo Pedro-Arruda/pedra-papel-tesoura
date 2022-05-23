@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pedra, papel e tesoura</title>
+</head>
+<body>
+    
+    <div class="container">
+
+        <header>
+            <img src="img/title.png" alt="">
+
+            <div class="placar">
+                <h3>Pontuação</h3>
+
+                <p id="pontuacao">
+                    0
+                </p>
+            </div>
+        </header>
+
+        <div class="escolha-usuario">
+            <img src="img/papel.png" alt="" class="escolha" onclick="iniciaJogo('papel')">
+            <img src="img/pedra.png" alt="" class="escolha" onclick="iniciaJogo('pedra')"> 
+            <img src="img/tesoura.png" alt="" class="escolha" onclick="iniciaJogo('tesoura')">
+        </div>
+
+        <div class="area-jogo inativo">
+            <div class="usuario">
+                <h3>SUA <br>ESCOLHA</h3>
+                <img src="img/papel.png" alt="" id="img-usuario">
+            </div>
+
+            <div class="resultado">
+                <p id="resultado">VOCÊ GANHOU</p>
+
+                <button onclick="voltaInicio()">JOGAR NOVAMENTE</button>
+            </div>
+
+            <div class="adversario">
+                <h3>ESCOLHA DO <br>ADVERSÁRIO</h3>
+                <img src="img/papel.png" alt="" id="img-computador">
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
